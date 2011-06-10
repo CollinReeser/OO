@@ -1,4 +1,3 @@
-
 #ifndef MEMORY_MANAGER
 #define MEMORY_MANAGER
 
@@ -21,18 +20,6 @@ private:
     int numOfScopeEntries;
     // This describes the amount of memory allocated for the scopeList
     size_t scopeListSize;
-};
-
-class Scope
-{
-    // This is malloc-ated to account for all the variables that will be
-    // declared in this scope
-    void* data;
-    // This declares the scope level of the current scope. 0 will be the main
-    // scope, incremented by 1 for each scope away from the main scope we delve
-    int scopeLevel;
-    // Constructor for a scope
-    Scope();
 };
 
 #endif
